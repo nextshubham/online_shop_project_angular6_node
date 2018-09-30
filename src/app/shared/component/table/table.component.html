@@ -1,0 +1,26 @@
+<table [style.border]="'2px solid red'">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th *ngFor="let header of headers">{{header}}</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let dataObj of data;let i=index">
+      <td>{{i+1}}</td>
+      <td *ngFor="let key of keys">
+        {{dataObj[key]}}
+      </td>
+      <td>
+        <input type="button" (click)="fnEdit(dataObj)" value="edit" />
+      </td>
+      <td>
+        <input type="button" (click)="fnDelete(dataObj)" value="delete" />
+      </td>
+    </tr>
+  </tbody>
+
+</table>

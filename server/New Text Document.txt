@@ -1,0 +1,22 @@
+mongodb+srv://chenchala:chenchala@cluster0-wxjhe.mongodb.net/test?retryWrites=true
+
+
+var dbObj = client.db('onlineshopping');
+
+
+[
+    {
+        "_id": "5bac719c1c9d4400000eaa31",
+        "userName": "admin",
+        "password": "pwd",
+        "phone": "8988888",
+        "role": "admin",
+        "email": "admin@gmail.com",
+        "orders": []
+    }
+]
+
+
+
+
+mongodb+srv://nextshubham:Hello@123@cluster0-2o01z.mongodb.net/test?retryWrites=true
