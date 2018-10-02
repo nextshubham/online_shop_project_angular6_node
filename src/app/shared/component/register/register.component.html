@@ -5,7 +5,7 @@
 
       <mat-card color="primary">
         <mat-card-header>
-          <mat-card-title>Login</mat-card-title>
+          <mat-card-title>Registeration Form</mat-card-title>
         </mat-card-header>
         <mat-card-content>
           <form class="example-form">
@@ -15,13 +15,16 @@
             <mat-form-field class="example-full-width">
               <input matInput placeholder="Password" [(ngModel)]="postData.password" [ngModelOptions]="{standalone: true}" required>
             </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Phone" [(ngModel)]="postData.phone" [ngModelOptions]="{standalone: true}" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" [(ngModel)]="postData.email" [ngModelOptions]="{standalone: true}" required>
+            </mat-form-field>
             <mat-card-actions>
               <div class="row">
                 <div class="col-md-4">
-                  <button mat-raised-button (click)="fnLogin()" value="Login" color="primary">Login</button>
-                </div>
-                <div class="col-md-4">
-                  <button mat-raised-button (click)="fnRegisterNav()" value="Register" color="primary">Register</button>
+                  <button mat-raised-button (click)="fnRegister()" value="Register" color="primary">Register</button>
                 </div>
               </div>
             </mat-card-actions>

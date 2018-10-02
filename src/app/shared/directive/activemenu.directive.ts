@@ -4,7 +4,5 @@ import { Directive } from '@angular/core';
   selector: '[appActivemenu]'
 })
 export class ActivemenuDirective {
-
-  constructor() { }
-
+  constructor() {}
 }

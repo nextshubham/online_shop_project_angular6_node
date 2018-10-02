@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var dbObj = require('../database/db');
 
-/* GET users listing. */
+/* Gt users list */
 router.post('/login', function(req, res, next) {
   dbObj.getConnection(function(database) {
     var query = req.body.query;
@@ -19,17 +19,12 @@ router.post('/login', function(req, res, next) {
   });
 });
 
-router.post('/insert', function(req, res, next) {
+/* Insert Users */
+router.post('/register', function(req, res, next) {
   dbObj.getConnection(function(database) {
-    var obj = {
-      userName: 'vendor',
-      password: 'vendor',
-      phone: '100',
-      role: 'vendor',
-      email: 'vendor@gmail.com',
-      orders: []
-    };
-    database.collection('users').insertOne(obj, function(e, r) {
+    debugger;
+    var data = req.body.query;
+    database.collection('users').insertOne(data, function(e, r) {
       if (e) {
         res.send(e);
       } else {

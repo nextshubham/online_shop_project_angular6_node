@@ -19,4 +19,4 @@ var dbObj = client.db('onlineshopping');
 
 
 
-mongodb+srv://nextshubham:Hello@123@cluster0-2o01z.mongodb.net/test?retryWrites=true
+mongodb+srv://nextshubham:<password>@cluster0-2o01z.mongodb.net/test?retryWrites=true

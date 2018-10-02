@@ -17,7 +17,6 @@ export class LoginComponent implements OnInit {
   ) {}
 
   ngOnInit() {}
- 
 
   fnLogin() {
     this.serverCall.post('users/login', { query: this.postData }).subscribe(
@@ -42,4 +41,8 @@ export class LoginComponent implements OnInit {
       }
     );
   }
+
+  fnRegisterNav() {
+    this.router.navigate(['/register']);
+  } //Register Close
 }

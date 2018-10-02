@@ -10,9 +10,9 @@ body {
 .active {
   color: white;
   background-color: white;
-  border: 1px solid blue;
+  border: 1px dashed blue;
   padding: 5px;
-  border-radius: 4px;
+  border-radius: 35px;
 }
 .menu a {
   color: blue !important;
@@ -24,7 +24,7 @@ body {
 .menu {
   background-color: yellow;
   margin-bottom: 50px;
-  border-radius: 4px;
+  border-radius: 43px;
   border: 1px solid blue;
   text-align: center;
 }
